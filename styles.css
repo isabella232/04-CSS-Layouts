@@ -88,8 +88,10 @@ li {
 }
 
 .related-author {
-  font-size: 18px;
-  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
 
 .related-posts {
@@ -281,9 +283,38 @@ footer {
   clear: both;
 } */
 
-.main-header{
+.main-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
 
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+.row{
+  display:flex;
 }
