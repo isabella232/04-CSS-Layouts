@@ -27,7 +27,6 @@ body {
 
 .price {
   font-size: 24px;
-  float: left;
 }
 
 .shipping {
@@ -42,25 +41,29 @@ body {
 
 .product-description {
   font-weight: bold;
-  clear: both;
 }
 
-.product-img {
-  float: left;
-  margin-right: 40px;
+.product-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
+
+.product-price-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-img {}
 
 .product-info {
-  width: 243px;
-  float: left;
-  margin-right: 40px;
-  margin-top: 20px;
+  flex: 1;
 }
 
 .product-details {
-  width: 243px;
-  float: left;
-  margin-top: 20px;
+  flex: 1;
 }
 
 .more-info:link,
@@ -124,13 +127,21 @@ body {
   letter-spacing: 2px;
 }
 
+.colors {
+  display: flex;
+  gap: 7px;
+}
+
 .color {
-  background-color: black;
   width: 22px;
   height: 22px;
 
   display: inline-block;
   margin-right: 10px;
+}
+
+.color-black {
+  background-color: black;
 }
 
 .color-red {
